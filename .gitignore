@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 test.py
 venv/
+
+dist/
+konsol.egg*/
+build/
