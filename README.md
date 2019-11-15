@@ -18,7 +18,7 @@ def hello():
     print("hello")
 
 command = Command()
-command.add("hello", hello)
+command.add_command("hello", hello)
 
 console = Konsol(
     command=command,
