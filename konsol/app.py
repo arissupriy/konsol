@@ -27,7 +27,14 @@ class Color:
         return self.colorize(self.HEADER + text)
 
 
-import sys, readline
+import sys
+
+try:
+    import readline
+except:
+    from pyreadline import Readline
+    readline = Readline()
+
 
 
 class KonsolException(Exception):
