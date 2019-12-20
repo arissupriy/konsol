@@ -110,9 +110,7 @@ class Konsol:
 
     def pre_command(self):
         self.COMMAND.call_function("clear")
-        return "\n-- {} --\n{}\n".format(
-            Color().header(self.__CONSOLE_NAME__.upper()), self.DESC,
-        )
+        return "\n-- {} --\n{}\n".format(self.__CONSOLE_NAME__.upper(), self.DESC)
 
     def start(self):
         stop = None
